@@ -1,0 +1,54 @@
+/* Hide scrollbar by default, show on hover */
+.sidebar-desktop,
+.main-content {
+  overflow: auto;
+}
+
+/* Chrome / Safari / Edge */
+.sidebar-desktop::-webkit-scrollbar,
+.main-content::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.sidebar-desktop:hover::-webkit-scrollbar,
+.main-content:hover::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-desktop::-webkit-scrollbar-thumb,
+.main-content::-webkit-scrollbar-thumb {
+  background-color: rgba(107, 114, 128, 0); /* invisible by default */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-desktop:hover::-webkit-scrollbar-thumb,
+.main-content:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(107, 114, 128, 0.8); /* gray on hover */
+}
+
+/* Track styles if you want a subtle line */
+.sidebar-desktop::-webkit-scrollbar-track,
+.main-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Optional for Firefox (not as smooth but still thin) */
+.sidebar-desktop,
+.main-content {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.sidebar-desktop:hover,
+.main-content:hover {
+  scrollbar-color: rgba(107, 114, 128, 0.8) transparent;
+}
+
+.app{
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+
+}
+.material-symbols-outlined {
+  color: #aaa;
+}
